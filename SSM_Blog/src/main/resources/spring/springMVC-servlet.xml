@@ -14,7 +14,7 @@
        						
 	<!-- 配置扫描的包 -->
 	<context:component-scan base-package="com.kk.controller" />
-	
+
 	<!-- 注册HandlerMapper、HandlerAdapter两个映射类 -->
 	<mvc:annotation-driven />
 	
