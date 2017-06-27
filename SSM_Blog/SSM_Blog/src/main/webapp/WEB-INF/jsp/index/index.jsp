@@ -1,12 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%
+	String path = request.getContextPath(); 
+	String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/"; 	
+%> 
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>index</title>
-    <link type="text/css" rel="stylesheet" href="css/index/index.css">
+<base href="<%=basePath %>"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link type="text/css" rel="stylesheet" href="css/index/index.css">
+<script type="text/javascript" src="js/jquery/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/index/index.js"></script>
+<title>Index</title>
 </head>
 <body>
-
     <div class="main">
         <!-- topLeft -->
         <div class ="topLeft">
@@ -25,27 +33,27 @@
         <div class = bottomLeft>
             <div class="nav">
                 <div class="navImgBox"><img class="navImg" src="images/nav/panel.png"/></div>
-                <div class="navTitle"><a href="#"><a>仪表盘</a></div>
+                <div class="navTitle"><a href="#">仪表盘</a></div>
             </div>
             <div class="nav">
                 <div class="navImgBox"><img class="navImg" src="images/nav/write.png"/></div>
-                <div class="navTitle"><a href="#"><a>发布文字</a></div>
+                <div class="navTitle"><a href="#">发布文字</a></div>
             </div>
             <div class="nav">
                 <div class="navImgBox"><img class="navImg" src="images/nav/list.png"/></div>
-                <div class="navTitle"><a href="#"><a>文章管理</a></div>
+                <div class="navTitle"><a href="#">文章管理</a></div>
             </div>
             <div class="nav">
                 <div class="navImgBox"><img class="navImg" src="images/nav/page.png"/></div>
-                <div class="navTitle"><a href="#"><a>页面管理</a></div>
+                <div class="navTitle"><a href="#">页面管理</a></div>
             </div>
             <div class="nav">
                 <div class="navImgBox"><img class="navImg" src="images/nav/chat.png"/></div>
-                <div class="navTitle"><a href="#"><a>评论管理</a></div>
+                <div class="navTitle"><a href="#">评论管理</a></div>
             </div>
             <div class="nav">
                 <div class="navImgBox"><img class="navImg" src="images/nav/tag.png"/></div>
-                <div class="navTitle"><a href="#"><a>标签/分类</a></div>
+                <div class="navTitle"><a href="#">标签/分类</a></div>
             </div>
         </div>
 
@@ -54,6 +62,6 @@
 
         </div>
     </div>
-
+    
 </body>
 </html>
