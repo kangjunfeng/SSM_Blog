@@ -39,10 +39,9 @@ a{
 }
 
 .logo,.nav{
-    margin: 0; /* 与外界元素的距离为0 */
+    margin: 0 auto; /* 与外界元素的距离为0 */
     padding: 0; /* 与内部元素的距离为0 */
     height: 50px;
-    display: block;
 }
 .nav{
     height: 50px;
@@ -53,7 +52,6 @@ a{
     width:70px;
     height: 70px;
     text-align: center;
-    vertical-align: middle;
     line-height: 70px;
     float: left;
 }
@@ -61,9 +59,8 @@ a{
 .logoImg{
     width: 50px;
     height: 50px;
-    text-align: center;
     vertical-align: middle;
-    color: lightgray;
+    padding-top:10px;
 }
 
 .logoTitle{
@@ -88,7 +85,6 @@ a{
     width:80px;
     height: 50px;
     text-align: center;
-    vertical-align: middle;
     line-height: 48px;
     float: left;
 }
@@ -97,6 +93,7 @@ a{
     height: 20px;
     text-align: center;
     vertical-align: middle;
+    padding-top:15px;
 }
 
 .navTitle{

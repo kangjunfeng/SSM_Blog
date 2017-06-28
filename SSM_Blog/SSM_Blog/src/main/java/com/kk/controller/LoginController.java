@@ -35,6 +35,12 @@ public class LoginController {
 		return "index/index";
 	}
 	
+	@RequestMapping("/page")
+	public String page(){
+		return "index/pageManage";
+	}
+	
+	
 	@RequestMapping(value="submitLogin",method = RequestMethod.POST)
 	@ResponseBody
 	public Map<String, Object> submitLogin(HttpServletRequest request,HttpServletResponse response){

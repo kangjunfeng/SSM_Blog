@@ -6,14 +6,44 @@
     background-color: gainsboro;
     line-height: 40px;
     padding-left: 5px;
+    margin-top: 10px;
     margin-bottom: 20px;
 }
 
 .table{
-    padding-left: 40px;
-    padding-right: 40px;
-    width: 100%;
-    height: auto;
-    border: 0.5px  solid lightgray;
+    margin-left: 20px;
+    margin-right: 20px;
+    border:1px solid gray;
+    border-radius: 5px;
+    text-align:left;
+}
 
+.insideTable{
+    width: 100%;
+}
+
+.tableHead{
+    height: 40px;
+    font-size:20px;
+}
+
+.m_title{
+    width: 30%;
+}
+
+.m_time{
+    width: 10%;
+}
+.m_pageview{
+    width: 10%;
+}
+.m_category{
+    width: 10%;
+}
+.m_status{
+    width: 10%;
+}
+
+.m_operation{
+    width: 30%;
 }
